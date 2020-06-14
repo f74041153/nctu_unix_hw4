@@ -26,7 +26,7 @@ traced
 (gdb) p output
 $1 = '\000' <repeats 63 times>
 ```
-### 假設當前已經獲得 output 的 n 個字元，因為目標是要獲得共 38 個字元，因此每次至少要 `next n`
+### 假設當前已經獲得 output 的 n 個字元，因為目標是要獲得共 38 個字元，因此每次至少要 `next (38-n)`
 ```
 (gdb) n 38
 44      in traceme.c
